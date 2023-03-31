@@ -1,6 +1,7 @@
 MYSQL_CONFIG:
   name: 'cola'
   host: 'localhost'
+  type: 'mysql'
   port: 3306
   username: 'user'
   password: 'pass'
