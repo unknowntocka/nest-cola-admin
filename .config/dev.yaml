@@ -1,0 +1,9 @@
+MYSQL_CONFIG:
+  name: 'cola'
+  host: 'localhost'
+  port: 3306
+  username: 'user'
+  password: 'pass'
+  database: 'cola'
+  synchronize: true
+  entities: ['src/**/*entity{.ts,.js}']
