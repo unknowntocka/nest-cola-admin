@@ -5,6 +5,11 @@ import {
   UpdateDateColumn,
 } from 'typeorm';
 
+enum UserStatus {
+  disabled = 0,
+  enabled = 1,
+}
+
 @Entity()
 export class User {
   @PrimaryGeneratedColumn()
@@ -21,6 +26,9 @@ export class User {
 
   @Column({ default: null })
   email: string;
+
+  @Column({ default: UserStatus.enabled })
+  status?: UserStatus;
 
   @UpdateDateColumn()
   updateTime: string;
